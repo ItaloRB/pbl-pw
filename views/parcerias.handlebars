@@ -1,0 +1,25 @@
+
+<h1>Conheça as parcerias do Calce-me</h1>
+<div class="row">
+  {{#each parcerias}}
+  <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h3 class="card-title"><b>Nome: </b>{{nome}}</h3>
+        <p class="card-text"><b>Anos de parceria: </b>{{anos}}</p>
+        <p class="card-text"><b>Contato: </b><a target="_blank" href="{{contato}}">{{contato}}</a> </p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+  <div id="card-novas-parcerias">
+    <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h3 class="card-title">Novas parcerias</h3>
+          <a class="btn btn-primary" href="cadastroparceria">Adicionar Parcerias</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
